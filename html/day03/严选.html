@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易严选</title>
+    <style>
+        body,ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .wrapper {
+            width: 1160px;
+            background-color: skyblue;
+            margin: 0 auto;
+        }
+
+
+        /* 导航栏 */
+        .nav {
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+        ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .nav ul > li {
+            background-color:plum;
+            width: 60px;
+            height: 30px;
+            float: left;
+            margin-right: 50px;
+        }
+        .nav ul > li:nth-child(11)  {
+            margin-right: 0;
+        }
+
+        /* 活动 */
+        .huodong {
+            margin-bottom: 20px;
+            background-color: pink;
+        }
+        .img1 {
+            width: 1160px;
+            margin: 0 auto;
+            width: 1600px;
+            height: 300px;
+            background-color:peru;
+        }
+        .coupon {
+            margin-bottom: 20px;
+            background-color: pink;
+        }
+        .coupon ul >li{
+            border-radius: 1em;
+            background-color: plum;
+            width: 170px;
+            float: left;
+            margin-right: 20px;
+        }
+        .coupon ul >li:nth-child(odd){
+            height: 200px;
+            margin-right: 20px;
+        }
+        .coupon ul >li:nth-child(even){
+            margin-top: 50px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        /* 打折券*/
+        .dazhequan {
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+        .dazhequan  ul > li {
+            border-radius: 1em;
+            background-color:plum;
+            width: 575px;
+            height: 100px;
+            float: left;
+            margin-right:  10px;
+        }
+        .dazhequan  ul > li:nth-child(2){
+            margin-right:  0;
+        }
+        .dazhequan  ul > li:nth-child(3){
+            width: 1160px;
+            margin-top: 10px;
+            height:100px;
+            margin-right:  0;
+        }
+
+        /* 限时优惠 */
+
+        .timing {
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+        .one {
+            margin-bottom: 100px;
+        }
+        .one ul > li {
+            border-radius: 1em;
+            background-color:plum;
+            width: 210px;
+            height: 50px;
+            float: left;
+            margin-right: 20px;
+            
+        }
+
+        .one ul > li :first-child {
+            margin-left: 10px;
+        }
+
+        .one ul > li :nth-child(2),
+        .one ul > li :nth-child(3),
+        .one ul > li :nth-child(4) {
+            width: 210px;
+        }
+
+        .two ul > li {
+            border-radius: 1em;
+            background-color:plum;
+            width: 270px;
+            height: 500px;
+            float: left;
+            margin-right: 20px;
+        }
+        .two ul > li:first-child {
+            margin-left: 10px;
+        }
+        .two ul > li:nth-child(4) {
+            margin-right: 0;
+        }
+        .two ul > li:last-child {
+            width: 300px;
+            height: 70px;
+            margin-top: 50px;
+            margin-left: 420px;
+            margin-bottom: 50px;
+        }
+
+        /* 爆品限时直降 */
+
+        .baopin {
+            margin-bottom: 20px;
+        }
+        .baopin ul > li {
+            border-radius: 1em;
+            background-color:plum;
+            width: 575px;
+            height: 250px;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .baopin ul > li:nth-child(even) {
+            margin-right: 0;
+        }
+        .baopin ul > li:nth-child(n+5) {
+            width: 282.5px;
+            height: 600px;
+            margin-right: 5px;
+            border-radius: 0;
+        }
+        /* 全品8折 */
+        .eightzhe {
+            border-radius: 1em;
+        }
+        .eightzhe ul > li {
+            background-color:plum;
+            width: 150px;
+            height: 50px;
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }    
+        .top_eight ul > li {
+            border-radius: 2em;
+            margin-top: 10px;
+        }
+        .top_eight ul > li:first-child{
+            margin-left: 50px;
+        }
+        .end_eight ul > li {
+            width: 282.5px;
+            height: 600px;
+            margin-right: 5px;
+            border-radius: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="huodong">
+            <div class="img1"></div>
+    </div>  
+
+    <div class="coupon">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="dazhequan">
+            <div class="wrapper">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+    </div>
+
+
+    <div class="timing">
+        <div class="wrapper">
+            <div class="one">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="two">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="baopin">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="eightzhe">
+        <div class="wrapper">
+            <div class="top_eight">
+                <ul>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                </ul>
+            </div>
+            <div class="end_eight">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
